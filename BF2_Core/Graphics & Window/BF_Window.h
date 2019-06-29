@@ -2,7 +2,7 @@
 
 #include <memory>
 
-class GLFWwindow;
+struct GLFWwindow;
 
 class Window {
 public:

@@ -1,6 +1,7 @@
 #include "BF_Window.h"
 #include "../Utils/BF_Error.h"
 
+#define GLFW_INCLUDE_VULKAN	//includes vulkan\vulkan.h
 #include <GLFW/glfw3.h>
 
 //statics

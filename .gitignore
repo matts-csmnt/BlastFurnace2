@@ -38,6 +38,7 @@
 *.idb
 *.tlog
 *.ilk
+*.db
 
 # User Prefs
 *.User
