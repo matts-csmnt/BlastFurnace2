@@ -30,3 +30,16 @@
 *.exe
 *.out
 *.app
+
+# Debugging stuff
+*.ipch
+*.log
+*.pdb
+*.idb
+*.tlog
+
+# User Prefs
+*.User
+
+# Unwanted Dirs
+*/.vs/
