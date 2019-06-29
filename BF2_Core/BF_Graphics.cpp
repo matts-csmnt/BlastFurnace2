@@ -2,6 +2,11 @@
 #include "Utils/BF_Consts.h"
 #include "Utils/BF_Error.h"
 
+#pragma comment(lib, "vulkan-1")
+
+#define GLFW_INCLUDE_VULKAN	//includes vulkan\vulkan.h
+#include <GLFW/glfw3.h>
+
 Graphics::Graphics() : m_exit(false)
 {
 }
