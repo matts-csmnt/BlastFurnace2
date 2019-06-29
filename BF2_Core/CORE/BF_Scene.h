@@ -6,7 +6,11 @@ public:
 	Scene(const Scene&) = delete;
 	Scene& operator=(const Scene&) = delete;
 
-	~Scene();
+	void init();
+	void shutdown();
+
+	void update();
+
 private:
 
 };

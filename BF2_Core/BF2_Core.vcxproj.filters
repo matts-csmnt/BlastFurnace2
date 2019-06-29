@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Graphics &amp; Window">
+      <UniqueIdentifier>{0334d37f-0c7a-446a-9174-44702efbd158}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utils">
+      <UniqueIdentifier>{b7565cff-dcd3-480d-80b5-6c82b2b07ba5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics &amp; Window">
+      <UniqueIdentifier>{3ca60b00-952a-45fd-a184-c5400ac229f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils">
+      <UniqueIdentifier>{e7315a32-b428-4346-b378-4f5af4532897}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CORE\BF_Core.h">
@@ -24,6 +36,15 @@
     <ClInclude Include="CORE\BF_Scene.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Graphics &amp; Window\BF_Window.h">
+      <Filter>Header Files\Graphics &amp; Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\BF_Error.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\BF_Consts.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -31,6 +52,18 @@
     </ClCompile>
     <ClCompile Include="CORE\BF_Core.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BF_Graphics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BF_Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics &amp; Window\BF_Window.cpp">
+      <Filter>Source Files\Graphics &amp; Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\BF_Error.cpp">
+      <Filter>Source Files\Utils</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

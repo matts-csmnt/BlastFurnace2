@@ -37,9 +37,11 @@
 *.pdb
 *.idb
 *.tlog
+*.ilk
 
 # User Prefs
 *.User
 
 # Unwanted Dirs
 */.vs/
+*/Debug/

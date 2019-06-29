@@ -1,9 +1,8 @@
 #pragma once
 
-//fwd dec engine components
-class Graphics;
-class Scene;
-//--
+#include <memory>
+#include "BF_Graphics.h"
+#include "BF_Scene.h"
 
 class Core {
 public:
@@ -21,6 +20,13 @@ public:
 private:
 
 	//Engine Components
-	Graphics*	m_pGraphics;
-	Scene*		m_pScene;
+	std::unique_ptr<Graphics>	m_pGraphics;
+	std::unique_ptr<Scene>		m_pScene;
+
+	//Timer
+	double m_seconds;
+	int64_t m_milliseconds;
+
+	//Exit flag
+	bool m_exit;
 };
