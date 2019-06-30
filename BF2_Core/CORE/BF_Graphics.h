@@ -3,8 +3,12 @@
 #include <memory>
 #include <vector>
 #include "../Graphics & Window/BF_Window.h"
+#include "../Graphics & Window/VK_QueueFamilyIndices.h"
+#include "../Graphics & Window/VK_Swapchain.h"
 
 #include <vulkan/vulkan.h>
+
+//---
 
 class Graphics {
 public:
@@ -27,13 +31,30 @@ private:
 	int vulkanSetup();
 	int vulkanShutdown();
 
-	int createInstance();
+	//debug
+	VkResult createDebugUtilsMessengerEXT(const VkDebugUtilsMessengerCreateInfoEXT*, const VkAllocationCallbacks*);
+	void destroyDebugUtilsMessengerEXT(const VkAllocationCallbacks*);
+
+	int createVkInstance();
+	int createVkDebugMsgr();
+	int createVkSurface();
+	int pickVkPhysicalDevice();
 
 	bool checkValidationLayerSupport();
+	bool isDeviceSuitable(const VkPhysicalDevice&);
+	QueueFamilyIndices findQueueFamilies(const VkPhysicalDevice&);
+	bool checkDeviceExtensionSupport(const VkPhysicalDevice&);
+	SwapChainSupportDetails querySwapChainSupport(const VkPhysicalDevice&);
 
 	std::vector<const char*> getRequiredExtensions() const;
 
-	VkInstance m_instance;
+	VkDebugUtilsMessengerEXT	m_debugMsgr;
+
+	VkInstance					m_instance;
+	VkSurfaceKHR				m_surface;
+	VkPhysicalDevice			m_physDevice;
+
+	Swapchain					m_swapchain;
 
 	bool m_enableValidationLayers;
 	std::vector<const char*> m_validationLayers;

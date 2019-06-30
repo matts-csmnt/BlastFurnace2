@@ -45,6 +45,12 @@
     <ClInclude Include="Utils\BF_Consts.h">
       <Filter>Header Files\Utils</Filter>
     </ClInclude>
+    <ClInclude Include="Graphics &amp; Window\VK_QueueFamilyIndices.h">
+      <Filter>Header Files\Graphics &amp; Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics &amp; Window\VK_Swapchain.h">
+      <Filter>Header Files\Graphics &amp; Window</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -53,17 +59,17 @@
     <ClCompile Include="CORE\BF_Core.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BF_Graphics.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BF_Scene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Graphics &amp; Window\BF_Window.cpp">
       <Filter>Source Files\Graphics &amp; Window</Filter>
     </ClCompile>
     <ClCompile Include="Utils\BF_Error.cpp">
       <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="CORE\BF_Graphics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CORE\BF_Scene.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

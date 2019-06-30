@@ -57,6 +57,11 @@ const double Window::queryTime() const
 	return glfwGetTime();
 }
 
+GLFWwindow* Window::getGLFWwindow() const
+{
+	return m_pWnd;
+}
+
 void framebufferResizeCallback(GLFWwindow * window, int width, int height)
 {
 	Window::s_resized = true;

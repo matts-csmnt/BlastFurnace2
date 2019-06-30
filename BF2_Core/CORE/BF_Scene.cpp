@@ -1,4 +1,4 @@
-#include "CORE\BF_Scene.h"
+#include "BF_Scene.h"
 
 Scene::Scene()
 {

@@ -78,6 +78,7 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(VULKAN_SDK)\include;$(SolutionDir)..\Libraries\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(VULKAN_SDK)\lib;$(SolutionDir)..\Libraries\glfw\lib-vc2017;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -93,6 +94,7 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(VULKAN_SDK)\include;$(SolutionDir)..\Libraries\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(VULKAN_SDK)\lib;$(SolutionDir)..\Libraries\glfw\lib-vc2017;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -110,6 +112,7 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(VULKAN_SDK)\include;$(SolutionDir)..\Libraries\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -129,6 +132,7 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(VULKAN_SDK)\include;$(SolutionDir)..\Libraries\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -143,13 +147,15 @@
     <ClInclude Include="CORE\BF_Core.h" />
     <ClInclude Include="CORE\BF_Scene.h" />
     <ClInclude Include="Graphics &amp; Window\BF_Window.h" />
+    <ClInclude Include="Graphics &amp; Window\VK_QueueFamilyIndices.h" />
+    <ClInclude Include="Graphics &amp; Window\VK_Swapchain.h" />
     <ClInclude Include="Utils\BF_Consts.h" />
     <ClInclude Include="Utils\BF_Error.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BF_Graphics.cpp" />
-    <ClCompile Include="BF_Scene.cpp" />
     <ClCompile Include="CORE\BF_Core.cpp" />
+    <ClCompile Include="CORE\BF_Graphics.cpp" />
+    <ClCompile Include="CORE\BF_Scene.cpp" />
     <ClCompile Include="Graphics &amp; Window\BF_Window.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Utils\BF_Error.cpp" />

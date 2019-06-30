@@ -20,6 +20,8 @@ public:
 
 	const double queryTime() const;
 
+	GLFWwindow* getGLFWwindow() const;
+
 private:
 
 	GLFWwindow* m_pWnd;
