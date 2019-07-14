@@ -42,6 +42,9 @@ private:
 	int pickVkPhysicalDevice();
 	int createVkLogicalDevice();
 	int createSwapchain();
+	int createDefaultRenderPass();
+	int createDefaultDescriptorSetLayout();
+	int createDefaultPipeline();
 
 	//cleanup
 	int cleanupSwapchain();
@@ -60,6 +63,8 @@ private:
 
 	//Helpers
 	VkImageView createVkImageView(VkDevice, VkImage, VkFormat, VkImageAspectFlags);
+	VkFormat findSupportedFormat(VkPhysicalDevice, const std::vector<VkFormat>&, VkImageTiling, VkFormatFeatureFlags);
+	VkShaderModule createShaderModule(const std::vector<char>&);
 
 	VkDebugUtilsMessengerEXT	m_debugMsgr;
 
@@ -70,6 +75,11 @@ private:
 
 	VkQueue						m_graphicsQueue;
 	VkQueue						m_presentQueue;
+
+	VkRenderPass				m_defaultRenderPass;
+	VkDescriptorSetLayout		m_defaultLayout;
+	VkPipeline					m_defaultPipeline;
+	VkPipelineLayout			m_defaultPipelineLayout;
 
 	Swapchain					m_swapchain;
 
