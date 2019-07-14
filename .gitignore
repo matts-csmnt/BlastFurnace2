@@ -46,3 +46,4 @@
 # Unwanted Dirs
 */.vs/
 */Debug/
+BF2_Core/x64/Debug/
